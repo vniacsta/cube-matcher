@@ -14,9 +14,10 @@ class EndScene extends Phaser.Scene {
     this.add.image(0, 0, 'endScreen').setOrigin(0);
     
     // Display score of completed game
-    const scoreText = this.add.text(155, 520, `Score: ${score}`, {
+    const scoreText = this.add.text(158, 520, `Score: ${score}`, {
       fontSize: '25px',
-      fill: '#ff0000'
+      fontWeight: 600,
+      fill: '#70AEDE'
     });
     // Sets the z-index: Put the text on top of the background and any other images
     scoreText.setDepth(1);
